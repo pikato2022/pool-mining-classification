@@ -1,5 +1,5 @@
 steps:
-- name: 'gcr.io/cloud-builders/docker'
+- name: 'test-training-pipeline'
   args: [ 'build', '-t', 'us-west2-docker.pkg.dev/$PROJECT_ID/my-docker-repo/training-image:tag1', '.' ]
 images:
 - 'us-west2-docker.pkg.dev/$PROJECT_ID/my-docker-repo/training-image:tag1'

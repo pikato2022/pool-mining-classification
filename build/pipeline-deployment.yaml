@@ -39,7 +39,7 @@ steps:
       [
         "build",
         "-t",
-        "us-west2-docker.pkg.dev/$PROJECT_ID/tfx-pipeline/taxi-tfx:${SHORT_SHA}",
+        "us-west2-docker.pkg.dev/$PROJECT_ID/my-docker-repo/taxi-tfx:${SHORT_SHA}",
         ".",
       ]
     # dir: "mle-taxi-fare-prediction"
@@ -128,6 +128,6 @@ steps:
   #   waitFor: ["Upload Pipeline to GCS"]
 # Push TFX Image to Container Registy.
 images:
-- "us-west2-docker.pkg.dev/$PROJECT_ID/tfx-pipeline/taxi-tfx:${SHORT_SHA}"
+- "us-west2-docker.pkg.dev/$PROJECT_ID/my-docker-repo/taxi-tfx:${SHORT_SHA}"
 
 timeout: 3500s

@@ -130,4 +130,4 @@ steps:
 images:
 - "us-west2-docker.pkg.dev/$PROJECT_ID/tfx-pipeline/taxi-tfx:${SHORT_SHA}"
 
-# timeout: 3500s
+timeout: 3500s
